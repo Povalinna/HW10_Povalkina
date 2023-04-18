@@ -8,20 +8,20 @@
 </head>
 <body>
     <script>
-        var mass = new Array();
-        masslength = parseInt(prompt("Enter the length of the array"));
-        console.log(masslength);
-        for (var i = 0; i < masslength; i++)
+        let mass = [];
+        let massLength = parseInt(prompt("Enter the length of the array"));
+        console.log(massLength);
+        for (var i = 0; i < massLength; i++)
         {let unitMass = prompt(`Enter #${i + 1} element of array`)
     mass.push(unitMass)};//Добавляємо елементи в масив
-    console.log(`Filled array`, mass);
-    alert( `Filled array ` + mass);
+    console.log(`Filled array `, mass);
+    alert( `Filled array : ` + mass);
     mass.sort();//Сортуємо масив за зростанням
-    console.log(mass);
-    alert(`Growing array ` + mass);
+    console.log(`Growing array `mass);
+    alert(`Growing array : ` + mass);
     mass.splice(2,3);//Видаляємо з масиву елементи з 2 по 4 включно
-    console.log(mass);
-    alert(`array after removing elements 2-4` + mass);
+    console.log(`Array after removing element 2-4 `mass);
+    alert(`Array after removing elements 2-4 : ` + mass);
 
     </script>
     
