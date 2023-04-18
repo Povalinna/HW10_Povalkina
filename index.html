@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mass = new Array();
+        masslength = parseInt(prompt("Enter the length of the array"));
+        console.log(masslength);
+        for (var i = 0; i < masslength; i++)
+        {let unitMass = prompt(`Enter #${i + 1} element of array`)
+    mass.push(unitMass)};//Добавляємо елементи в масив
+    console.log(`Filled array`, mass);
+    alert( `Filled array ` + mass);
+    mass.sort();//Сортуємо масив за зростанням
+    console.log(mass);
+    alert(`Growing array ` + mass);
+    mass.splice(2,3);//Видаляємо з масиву елементи з 2 по 4 включно
+    console.log(mass);
+    alert(`array after removing elements 2-4` + mass);
+
+    </script>
+    
+</body>
+</html>
